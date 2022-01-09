@@ -5,14 +5,14 @@ export const CartContainer = styled.div`
     max-width:360px;
     position:absolute;
     top:-100vh;
+    right:0.7rem;
     background:${({theme})=>theme.colors.white};
     border-radius:1rem;
     box-shadow: 1px 1px 4px 0 ${({theme})=>theme.colors.grayishBlue};
     z-index:10;
-    
+    transition:all 0.5s ease;
     &.active{
         top:7.6rem;
-        right:0.7rem;
         
         @media (min-width:768px){
             top:9.2rem;

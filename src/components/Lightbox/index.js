@@ -66,6 +66,7 @@ const Lightbox = ({ images, isActive, closeLightbox }) => {
                 {
                     images.map((image,index) => (
                         <LightboxNavItem key={index}
+                        className={activeImage?.index == index ? 'active':''}
                         onClick={()=>setActiveImageHandler(image)} 
                         >
                             <Img 

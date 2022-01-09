@@ -8,6 +8,7 @@ export const NavbarContainer = styled.div`
     top:0;
     left:-100%;
     z-index:40;
+    transition:all 0.5s ease;
     &.active{
         left:0;
     }
