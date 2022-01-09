@@ -59,8 +59,8 @@ const Slider = () => {
           alt={coverImg?.alt}
           onClick={()=>lightboxHandler()}
         />
-        <ArrowLeft onClick={()=>arrowHandler(false)} />
-        <ArrowRight onClick={()=>arrowHandler(true)} />
+        <ArrowLeft  aria-labelledby="Previous Image" onClick={()=>arrowHandler(false)} />
+        <ArrowRight aria-labelledby="Next Image" onClick={()=>arrowHandler(true)} />
       </ActiveImgContainer>
       <SliderNav>
        {

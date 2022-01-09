@@ -12,6 +12,12 @@ export const LightboxContainer = styled.div`
         align-items:center;
         justify-content:center;    
     }
+    @media (max-width:767px){
+        display:none;
+        &.active{
+            display:none;
+        }
+    }
     `
 export const LightboxInner = styled.div`
     width:55rem;
