@@ -45,7 +45,7 @@ const Lightbox = ({ images, isActive, closeLightbox }) => {
     <LightboxContainer className={isActive ? 'active':''}>
       <LightboxInner>
         <LightboxHeader>
-            <LightboxCloseButton aria-labelledby="Close Lightbox" onClick={()=>closeLightbox()}>
+            <LightboxCloseButton aria-label="Close Lightbox" onClick={()=>closeLightbox()}>
             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="currentColor" fillRule="evenodd"/></svg>
             </LightboxCloseButton>
         </LightboxHeader>
@@ -54,10 +54,10 @@ const Lightbox = ({ images, isActive, closeLightbox }) => {
             src={`${process.env.PUBLIC_URL}/images/${activeImage?.src}`}
             alt={activeImage?.alt}
           />
-          <ArrowRight aria-labelledby="Previous Image" onClick={()=>arrowHandler(true)} >
+          <ArrowRight aria-label="Previous Image" onClick={()=>arrowHandler(true)} >
             <svg viewBox="-6 -4 26 36" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="currentColor" strokeWidth="4" fill="none" fillRule="evenodd"/></svg>
           </ArrowRight>
-          <ArrowLeft aria-labelledby="Next Image" onClick={()=>arrowHandler(false)} >
+          <ArrowLeft aria-label="Next Image" onClick={()=>arrowHandler(false)} >
           <svg viewBox="-4 -4 26 36" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="currentColor" strokeWidth="4" fill="none" fillRule="evenodd"/></svg>
           </ArrowLeft>
         </LightboxBody>

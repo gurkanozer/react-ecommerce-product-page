@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProductPageContainer = styled.div`
+export const ProductPageContainer = styled.main`
     width:100%;
     max-width:114.8rem;
     margin:0 auto;
